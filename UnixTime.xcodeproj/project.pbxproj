@@ -7,24 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902B062D1A1172E500DD4A4A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902B062C1A1172E500DD4A4A /* ServiceManagement.framework */; };
+		908651A51A1192AB004BA253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 908651A41A1192AB004BA253 /* main.m */; };
+		908651BD1A1192D3004BA253 /* UnixTimeHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9086519D1A1192AB004BA253 /* UnixTimeHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		909FA09A1A0C5A46004A4B41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 909FA0991A0C5A46004A4B41 /* AppDelegate.m */; };
 		909FA09C1A0C5A46004A4B41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 909FA09B1A0C5A46004A4B41 /* main.m */; };
 		909FA09E1A0C5A46004A4B41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909FA09D1A0C5A46004A4B41 /* Images.xcassets */; };
 		909FA0A11A0C5A46004A4B41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909FA09F1A0C5A46004A4B41 /* MainMenu.xib */; };
-		909FA0AD1A0C5A46004A4B41 /* UnixTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 909FA0AC1A0C5A46004A4B41 /* UnixTimeTests.m */; };
+		90DA08711A11DC180051C9B5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90DA08731A11DC180051C9B5 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		909FA0A71A0C5A46004A4B41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 909FA08B1A0C5A46004A4B41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 909FA0921A0C5A46004A4B41;
-			remoteInfo = UnixTime;
+/* Begin PBXCopyFilesBuildPhase section */
+		909FA0DA1A0C5B16004A4B41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				908651BD1A1192D3004BA253 /* UnixTimeHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		902B062C1A1172E500DD4A4A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		9040E7B81A11D98400119C4F /* UnixTime.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnixTime.profdata; sourceTree = "<group>"; };
+		9086519D1A1192AB004BA253 /* UnixTimeHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixTimeHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		908651A01A1192AB004BA253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908651A41A1192AB004BA253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		909FA0931A0C5A46004A4B41 /* UnixTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909FA0971A0C5A46004A4B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909FA0981A0C5A46004A4B41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,35 +43,60 @@
 		909FA09B1A0C5A46004A4B41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		909FA09D1A0C5A46004A4B41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		909FA0A01A0C5A46004A4B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		909FA0A61A0C5A46004A4B41 /* UnixTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnixTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		909FA0AB1A0C5A46004A4B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		909FA0AC1A0C5A46004A4B41 /* UnixTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnixTimeTests.m; sourceTree = "<group>"; };
+		90DA08721A11DC180051C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		909FA0901A0C5A46004A4B41 /* Frameworks */ = {
+		9086519A1A1192AB004BA253 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		909FA0A31A0C5A46004A4B41 /* Frameworks */ = {
+		909FA0901A0C5A46004A4B41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902B062D1A1172E500DD4A4A /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		902B062E1A1172FD00DD4A4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				902B062C1A1172E500DD4A4A /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9040E7B71A11D98400119C4F /* OptimizationProfiles */ = {
+			isa = PBXGroup;
+			children = (
+				9040E7B81A11D98400119C4F /* UnixTime.profdata */,
+			);
+			path = OptimizationProfiles;
+			sourceTree = "<group>";
+		};
+		9086519E1A1192AB004BA253 /* UnixTimeHelper */ = {
+			isa = PBXGroup;
+			children = (
+				908651A01A1192AB004BA253 /* Info.plist */,
+				908651A41A1192AB004BA253 /* main.m */,
+			);
+			path = UnixTimeHelper;
+			sourceTree = "<group>";
+		};
 		909FA08A1A0C5A46004A4B41 = {
 			isa = PBXGroup;
 			children = (
 				909FA0951A0C5A46004A4B41 /* UnixTime */,
-				909FA0A91A0C5A46004A4B41 /* UnixTimeTests */,
+				9086519E1A1192AB004BA253 /* UnixTimeHelper */,
 				909FA0941A0C5A46004A4B41 /* Products */,
+				9040E7B71A11D98400119C4F /* OptimizationProfiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				909FA0931A0C5A46004A4B41 /* UnixTime.app */,
-				909FA0A61A0C5A46004A4B41 /* UnixTimeTests.xctest */,
+				9086519D1A1192AB004BA253 /* UnixTimeHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +114,8 @@
 			children = (
 				909FA0981A0C5A46004A4B41 /* AppDelegate.h */,
 				909FA0991A0C5A46004A4B41 /* AppDelegate.m */,
-				909FA09D1A0C5A46004A4B41 /* Images.xcassets */,
-				909FA09F1A0C5A46004A4B41 /* MainMenu.xib */,
 				909FA0961A0C5A46004A4B41 /* Supporting Files */,
+				902B062E1A1172FD00DD4A4A /* Frameworks */,
 			);
 			path = UnixTime;
 			sourceTree = "<group>";
@@ -88,25 +123,11 @@
 		909FA0961A0C5A46004A4B41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				909FA09D1A0C5A46004A4B41 /* Images.xcassets */,
+				909FA09F1A0C5A46004A4B41 /* MainMenu.xib */,
 				909FA0971A0C5A46004A4B41 /* Info.plist */,
 				909FA09B1A0C5A46004A4B41 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		909FA0A91A0C5A46004A4B41 /* UnixTimeTests */ = {
-			isa = PBXGroup;
-			children = (
-				909FA0AC1A0C5A46004A4B41 /* UnixTimeTests.m */,
-				909FA0AA1A0C5A46004A4B41 /* Supporting Files */,
-			);
-			path = UnixTimeTests;
-			sourceTree = "<group>";
-		};
-		909FA0AA1A0C5A46004A4B41 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				909FA0AB1A0C5A46004A4B41 /* Info.plist */,
+				90DA08731A11DC180051C9B5 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +135,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9086519C1A1192AB004BA253 /* UnixTimeHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 908651B71A1192AB004BA253 /* Build configuration list for PBXNativeTarget "UnixTimeHelper" */;
+			buildPhases = (
+				908651991A1192AB004BA253 /* Sources */,
+				9086519A1A1192AB004BA253 /* Frameworks */,
+				9086519B1A1192AB004BA253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnixTimeHelper;
+			productName = UnixTimeHelper;
+			productReference = 9086519D1A1192AB004BA253 /* UnixTimeHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 		909FA0921A0C5A46004A4B41 /* UnixTime */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 909FA0B01A0C5A46004A4B41 /* Build configuration list for PBXNativeTarget "UnixTime" */;
@@ -121,6 +159,7 @@
 				909FA08F1A0C5A46004A4B41 /* Sources */,
 				909FA0901A0C5A46004A4B41 /* Frameworks */,
 				909FA0911A0C5A46004A4B41 /* Resources */,
+				909FA0DA1A0C5B16004A4B41 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -131,24 +170,6 @@
 			productReference = 909FA0931A0C5A46004A4B41 /* UnixTime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		909FA0A51A0C5A46004A4B41 /* UnixTimeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 909FA0B31A0C5A46004A4B41 /* Build configuration list for PBXNativeTarget "UnixTimeTests" */;
-			buildPhases = (
-				909FA0A21A0C5A46004A4B41 /* Sources */,
-				909FA0A31A0C5A46004A4B41 /* Frameworks */,
-				909FA0A41A0C5A46004A4B41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				909FA0A81A0C5A46004A4B41 /* PBXTargetDependency */,
-			);
-			name = UnixTimeTests;
-			productName = UnixTimeTests;
-			productReference = 909FA0A61A0C5A46004A4B41 /* UnixTimeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,12 +179,11 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Michael Grubb";
 				TargetAttributes = {
-					909FA0921A0C5A46004A4B41 = {
+					9086519C1A1192AB004BA253 = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					909FA0A51A0C5A46004A4B41 = {
+					909FA0921A0C5A46004A4B41 = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 909FA0921A0C5A46004A4B41;
 					};
 				};
 			};
@@ -181,31 +201,40 @@
 			projectRoot = "";
 			targets = (
 				909FA0921A0C5A46004A4B41 /* UnixTime */,
-				909FA0A51A0C5A46004A4B41 /* UnixTimeTests */,
+				9086519C1A1192AB004BA253 /* UnixTimeHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9086519B1A1192AB004BA253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		909FA0911A0C5A46004A4B41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				909FA09E1A0C5A46004A4B41 /* Images.xcassets in Resources */,
+				90DA08711A11DC180051C9B5 /* Credits.rtf in Resources */,
 				909FA0A11A0C5A46004A4B41 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		909FA0A41A0C5A46004A4B41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		908651991A1192AB004BA253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908651A51A1192AB004BA253 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		909FA08F1A0C5A46004A4B41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,23 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		909FA0A21A0C5A46004A4B41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				909FA0AD1A0C5A46004A4B41 /* UnixTimeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		909FA0A81A0C5A46004A4B41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 909FA0921A0C5A46004A4B41 /* UnixTime */;
-			targetProxy = 909FA0A71A0C5A46004A4B41 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		909FA09F1A0C5A46004A4B41 /* MainMenu.xib */ = {
@@ -242,9 +255,43 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		90DA08731A11DC180051C9B5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90DA08721A11DC180051C9B5 /* Base */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		908651B81A1192AB004BA253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UnixTimeHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		908651B91A1192AB004BA253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnixTimeHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		909FA0AE1A0C5A46004A4B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +375,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UnixTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,52 +384,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UnixTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		909FA0B41A0C5A46004A4B41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UnixTimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnixTime.app/Contents/MacOS/UnixTime";
-			};
-			name = Debug;
-		};
-		909FA0B51A0C5A46004A4B41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UnixTimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnixTime.app/Contents/MacOS/UnixTime";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		908651B71A1192AB004BA253 /* Build configuration list for PBXNativeTarget "UnixTimeHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				908651B81A1192AB004BA253 /* Debug */,
+				908651B91A1192AB004BA253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		909FA08E1A0C5A46004A4B41 /* Build configuration list for PBXProject "UnixTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -398,14 +421,7 @@
 				909FA0B21A0C5A46004A4B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		909FA0B31A0C5A46004A4B41 /* Build configuration list for PBXNativeTarget "UnixTimeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				909FA0B41A0C5A46004A4B41 /* Debug */,
-				909FA0B51A0C5A46004A4B41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

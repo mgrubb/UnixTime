@@ -7,30 +7,16 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-               BuildableName = "UnixTime.app"
-               BlueprintName = "UnixTime"
-               ReferencedContainer = "container:UnixTime.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
             buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909FA0A51A0C5A46004A4B41"
-               BuildableName = "UnixTimeTests.xctest"
-               BlueprintName = "UnixTimeTests"
+               BlueprintIdentifier = "9086519C1A1192AB004BA253"
+               BuildableName = "UnixTimeHelper.app"
+               BlueprintName = "UnixTimeHelper"
                ReferencedContainer = "container:UnixTime.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909FA0A51A0C5A46004A4B41"
-               BuildableName = "UnixTimeTests.xctest"
-               BlueprintName = "UnixTimeTests"
-               ReferencedContainer = "container:UnixTime.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-            BuildableName = "UnixTime.app"
-            BlueprintName = "UnixTime"
+            BlueprintIdentifier = "9086519C1A1192AB004BA253"
+            BuildableName = "UnixTimeHelper.app"
+            BlueprintName = "UnixTimeHelper"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -68,16 +44,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-            BuildableName = "UnixTime.app"
-            BlueprintName = "UnixTime"
+            BlueprintIdentifier = "9086519C1A1192AB004BA253"
+            BuildableName = "UnixTimeHelper.app"
+            BlueprintName = "UnixTimeHelper"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -93,15 +69,15 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-            BuildableName = "UnixTime.app"
-            BlueprintName = "UnixTime"
+            BlueprintIdentifier = "9086519C1A1192AB004BA253"
+            BuildableName = "UnixTimeHelper.app"
+            BlueprintName = "UnixTimeHelper"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

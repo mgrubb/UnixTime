@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-               BuildableName = "UnixTime.app"
-               BlueprintName = "UnixTime"
+               BlueprintIdentifier = "909FA0B91A0C5A82004A4B41"
+               BuildableName = "UnixTimeHelper.app"
+               BlueprintName = "UnixTimeHelper"
                ReferencedContainer = "container:UnixTime.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909FA0A51A0C5A46004A4B41"
-               BuildableName = "UnixTimeTests.xctest"
-               BlueprintName = "UnixTimeTests"
+               BlueprintIdentifier = "909FA0CB1A0C5A82004A4B41"
+               BuildableName = "UnixTimeHelperTests.xctest"
+               BlueprintName = "UnixTimeHelperTests"
                ReferencedContainer = "container:UnixTime.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "909FA0A51A0C5A46004A4B41"
-               BuildableName = "UnixTimeTests.xctest"
-               BlueprintName = "UnixTimeTests"
+               BlueprintIdentifier = "909FA0CB1A0C5A82004A4B41"
+               BuildableName = "UnixTimeHelperTests.xctest"
+               BlueprintName = "UnixTimeHelperTests"
                ReferencedContainer = "container:UnixTime.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-            BuildableName = "UnixTime.app"
-            BlueprintName = "UnixTime"
+            BlueprintIdentifier = "909FA0B91A0C5A82004A4B41"
+            BuildableName = "UnixTimeHelper.app"
+            BlueprintName = "UnixTimeHelper"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,9 +75,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-            BuildableName = "UnixTime.app"
-            BlueprintName = "UnixTime"
+            BlueprintIdentifier = "909FA0B91A0C5A82004A4B41"
+            BuildableName = "UnixTimeHelper.app"
+            BlueprintName = "UnixTimeHelper"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -93,9 +93,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "909FA0921A0C5A46004A4B41"
-            BuildableName = "UnixTime.app"
-            BlueprintName = "UnixTime"
+            BlueprintIdentifier = "909FA0B91A0C5A82004A4B41"
+            BuildableName = "UnixTimeHelper.app"
+            BlueprintName = "UnixTimeHelper"
             ReferencedContainer = "container:UnixTime.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
