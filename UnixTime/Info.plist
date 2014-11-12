@@ -34,5 +34,7 @@
 	<true/>
 	<key>SUPublicDSAKeyFile</key>
 	<string>updatekey.pem</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/mgrubb/UnixTime/appcast/AppCast/unixtime-appcast.xml</string>
 </dict>
 </plist>
