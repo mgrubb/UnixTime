@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		902B062D1A1172E500DD4A4A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902B062C1A1172E500DD4A4A /* ServiceManagement.framework */; };
 		908651A51A1192AB004BA253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 908651A41A1192AB004BA253 /* main.m */; };
-		908651BD1A1192D3004BA253 /* UnixTimeHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9086519D1A1192AB004BA253 /* UnixTimeHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		908B59F21A128A9400151A4E /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 908B59F01A128A9400151A4E /* PreferencesWindowController.m */; };
+		908B59F31A128A9400151A4E /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908B59F11A128A9400151A4E /* PreferencesWindow.xib */; };
+		908B59F51A12AC7A00151A4E /* updatekey.pem in Resources */ = {isa = PBXBuildFile; fileRef = 908B59F41A12AC7A00151A4E /* updatekey.pem */; };
 		909FA09A1A0C5A46004A4B41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 909FA0991A0C5A46004A4B41 /* AppDelegate.m */; };
 		909FA09C1A0C5A46004A4B41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 909FA09B1A0C5A46004A4B41 /* main.m */; };
 		909FA09E1A0C5A46004A4B41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909FA09D1A0C5A46004A4B41 /* Images.xcassets */; };
 		909FA0A11A0C5A46004A4B41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909FA09F1A0C5A46004A4B41 /* MainMenu.xib */; };
+		90B6FD5B1A13A8CA003F60D1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B6FD5A1A13A8CA003F60D1 /* Sparkle.framework */; };
 		90DA08711A11DC180051C9B5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90DA08731A11DC180051C9B5 /* Credits.rtf */; };
+		90DA08781A1260A20051C9B5 /* UnixTimeHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9086519D1A1192AB004BA253 /* UnixTimeHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,16 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				908651BD1A1192D3004BA253 /* UnixTimeHelper.app in CopyFiles */,
+				90DA08781A1260A20051C9B5 /* UnixTimeHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DA08761A125BA00051C9B5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,10 +45,13 @@
 
 /* Begin PBXFileReference section */
 		902B062C1A1172E500DD4A4A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		9040E7B81A11D98400119C4F /* UnixTime.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = UnixTime.profdata; sourceTree = "<group>"; };
 		9086519D1A1192AB004BA253 /* UnixTimeHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixTimeHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		908651A01A1192AB004BA253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		908651A41A1192AB004BA253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		908B59EF1A128A9400151A4E /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		908B59F01A128A9400151A4E /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		908B59F11A128A9400151A4E /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		908B59F41A12AC7A00151A4E /* updatekey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = updatekey.pem; sourceTree = "<group>"; };
 		909FA0931A0C5A46004A4B41 /* UnixTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909FA0971A0C5A46004A4B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909FA0981A0C5A46004A4B41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,6 +59,7 @@
 		909FA09B1A0C5A46004A4B41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		909FA09D1A0C5A46004A4B41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		909FA0A01A0C5A46004A4B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		90B6FD5A1A13A8CA003F60D1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		90DA08721A11DC180051C9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				902B062D1A1172E500DD4A4A /* ServiceManagement.framework in Frameworks */,
+				90B6FD5B1A13A8CA003F60D1 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,17 +86,10 @@
 		902B062E1A1172FD00DD4A4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90B6FD5A1A13A8CA003F60D1 /* Sparkle.framework */,
 				902B062C1A1172E500DD4A4A /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9040E7B71A11D98400119C4F /* OptimizationProfiles */ = {
-			isa = PBXGroup;
-			children = (
-				9040E7B81A11D98400119C4F /* UnixTime.profdata */,
-			);
-			path = OptimizationProfiles;
 			sourceTree = "<group>";
 		};
 		9086519E1A1192AB004BA253 /* UnixTimeHelper */ = {
@@ -96,7 +107,6 @@
 				909FA0951A0C5A46004A4B41 /* UnixTime */,
 				9086519E1A1192AB004BA253 /* UnixTimeHelper */,
 				909FA0941A0C5A46004A4B41 /* Products */,
-				9040E7B71A11D98400119C4F /* OptimizationProfiles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +122,8 @@
 		909FA0951A0C5A46004A4B41 /* UnixTime */ = {
 			isa = PBXGroup;
 			children = (
+				908B59EF1A128A9400151A4E /* PreferencesWindowController.h */,
+				908B59F01A128A9400151A4E /* PreferencesWindowController.m */,
 				909FA0981A0C5A46004A4B41 /* AppDelegate.h */,
 				909FA0991A0C5A46004A4B41 /* AppDelegate.m */,
 				909FA0961A0C5A46004A4B41 /* Supporting Files */,
@@ -123,7 +135,9 @@
 		909FA0961A0C5A46004A4B41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				908B59F41A12AC7A00151A4E /* updatekey.pem */,
 				909FA09D1A0C5A46004A4B41 /* Images.xcassets */,
+				908B59F11A128A9400151A4E /* PreferencesWindow.xib */,
 				909FA09F1A0C5A46004A4B41 /* MainMenu.xib */,
 				909FA0971A0C5A46004A4B41 /* Info.plist */,
 				909FA09B1A0C5A46004A4B41 /* main.m */,
@@ -160,6 +174,7 @@
 				909FA0901A0C5A46004A4B41 /* Frameworks */,
 				909FA0911A0C5A46004A4B41 /* Resources */,
 				909FA0DA1A0C5B16004A4B41 /* CopyFiles */,
+				90DA08761A125BA00051C9B5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -218,8 +233,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908B59F51A12AC7A00151A4E /* updatekey.pem in Resources */,
 				909FA09E1A0C5A46004A4B41 /* Images.xcassets in Resources */,
 				90DA08711A11DC180051C9B5 /* Credits.rtf in Resources */,
+				908B59F31A128A9400151A4E /* PreferencesWindow.xib in Resources */,
 				909FA0A11A0C5A46004A4B41 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				909FA09C1A0C5A46004A4B41 /* main.m in Sources */,
+				908B59F21A128A9400151A4E /* PreferencesWindowController.m in Sources */,
 				909FA09A1A0C5A46004A4B41 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -277,6 +296,7 @@
 				);
 				INFOPLIST_FILE = UnixTimeHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,9 +305,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = UnixTimeHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,10 +395,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnixTime",
+				);
 				INFOPLIST_FILE = UnixTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -384,11 +413,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnixTime",
+				);
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = UnixTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
