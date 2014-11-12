@@ -13,7 +13,6 @@ static NSString *kShouldStartAtLoginState = @"kShouldStartAtLoginState";
 
 @interface AppDelegate ()
 - (void)updateMenu;
-- (NSCellStateValue)shouldLaunchAtLogin;
 @end
 
 @implementation AppDelegate
@@ -27,22 +26,13 @@ static NSString *kShouldStartAtLoginState = @"kShouldStartAtLoginState";
     self.epochDay.title = [NSString stringWithFormat:@"%llu", (UInt64)(t / 86400)];
 }
 
-- (NSCellStateValue)shouldLaunchAtLogin
-{
-    return [_defaults boolForKey:kShouldStartAtLoginState] ? NSOnState : NSOffState;
-}
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    _defaults = [NSUserDefaults standardUserDefaults];
     NSImage *iconImage = [NSImage imageNamed:@"statusIcon"];
-    [_defaults registerDefaults:@{kShouldStartAtLoginState: @NO}];
-    
     unixTimeStatusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [iconImage setTemplate:YES];
     unixTimeStatusItem.image = iconImage;
     unixTimeStatusItem.menu = self.statusMenu;
-    self.launchAtLogin.state = [self shouldLaunchAtLogin];
     [self updateMenu];
 }
 
@@ -51,19 +41,6 @@ static NSString *kShouldStartAtLoginState = @"kShouldStartAtLoginState";
     NSPasteboard *pb = [NSPasteboard generalPasteboard];
     [pb clearContents];
     [pb setString:sender.title forType:NSPasteboardTypeString];
-}
-
-- (IBAction)changeLaunchAtLogin:(NSMenuItem *)sender
-{
-    NSCellStateValue newState = sender.state == NSOnState ? NSOffState : NSOnState;
-    if ( !SMLoginItemSetEnabled(CFSTR("co.grubb.UnixTimeHelper"), newState == NSOnState) )
-    {
-        NSLog(@"Could not enable launch at login!");
-        return;
-    }
-    sender.state = newState;
-    [_defaults setBool:(newState == NSOnState) forKey:kShouldStartAtLoginState];
-    [_defaults synchronize];
 }
 
 - (void)menuWillOpen:(NSMenu *)menu
@@ -84,6 +61,15 @@ static NSString *kShouldStartAtLoginState = @"kShouldStartAtLoginState";
         [_currentTimer invalidate];
         _currentTimer = nil;
     }
+}
+
+- (IBAction)showPreferencePane:(id)sender
+{
+    if (!_prefPane)
+    {
+        _prefPane = [PreferencesWindowController new];
+    }
+    [_prefPane showWindow:self];
 }
 
 @end

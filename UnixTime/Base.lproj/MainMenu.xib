@@ -16,10 +16,10 @@
             <connections>
                 <outlet property="epochDay" destination="QH2-J7-rdH" id="sj8-QA-RR2"/>
                 <outlet property="epochTime" destination="BIp-vK-xLl" id="YcJ-VT-Bmt"/>
-                <outlet property="launchAtLogin" destination="Xk9-jB-4UA" id="XpT-1s-of5"/>
                 <outlet property="statusMenu" destination="hln-M8-AeB" id="iVc-Mw-hAV"/>
             </connections>
         </customObject>
+        <customObject id="F03-mt-6bI"/>
         <menu id="hln-M8-AeB">
             <items>
                 <menuItem title="Epoch Time" enabled="NO" id="vQh-9u-jMo">
@@ -45,16 +45,10 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Kk2-sv-6RW"/>
-                <menuItem title="Launch at Login" id="Xk9-jB-4UA">
+                <menuItem title="Preferences" id="uoQ-TV-ii3">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="changeLaunchAtLogin:" target="Voe-Tx-rLC" id="GUi-Fi-QCA"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="About" id="aEE-Ki-uYi">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="orderFrontStandardAboutPanel:" target="-1" id="gVG-SV-QuM"/>
+                        <action selector="showPreferencePane:" target="Voe-Tx-rLC" id="SO1-A5-m5R"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit UnixTime" id="Awd-oc-fen">
