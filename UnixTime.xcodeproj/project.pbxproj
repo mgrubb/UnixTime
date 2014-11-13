@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9049FD1E1A1466D100EF018B /* Distribute */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9049FD1F1A1466D200EF018B /* Build configuration list for PBXAggregateTarget "Distribute" */;
+			buildPhases = (
+				9049FD281A14671500EF018B /* ShellScript */,
+			);
+			dependencies = (
+				9049FD251A14670200EF018B /* PBXTargetDependency */,
+				9049FD271A14670500EF018B /* PBXTargetDependency */,
+			);
+			name = Distribute;
+			productName = Distribute;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		902B062D1A1172E500DD4A4A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902B062C1A1172E500DD4A4A /* ServiceManagement.framework */; };
 		908651A51A1192AB004BA253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 908651A41A1192AB004BA253 /* main.m */; };
@@ -16,10 +32,35 @@
 		909FA09C1A0C5A46004A4B41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 909FA09B1A0C5A46004A4B41 /* main.m */; };
 		909FA09E1A0C5A46004A4B41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909FA09D1A0C5A46004A4B41 /* Images.xcassets */; };
 		909FA0A11A0C5A46004A4B41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909FA09F1A0C5A46004A4B41 /* MainMenu.xib */; };
+		90B69D471A15596C007A0854 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 90B6FD5A1A13A8CA003F60D1 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90B6FD5B1A13A8CA003F60D1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B6FD5A1A13A8CA003F60D1 /* Sparkle.framework */; };
 		90DA08711A11DC180051C9B5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90DA08731A11DC180051C9B5 /* Credits.rtf */; };
 		90DA08781A1260A20051C9B5 /* UnixTimeHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9086519D1A1192AB004BA253 /* UnixTimeHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9049FD221A1466FA00EF018B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 909FA08B1A0C5A46004A4B41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9086519C1A1192AB004BA253;
+			remoteInfo = UnixTimeHelper;
+		};
+		9049FD241A14670200EF018B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 909FA08B1A0C5A46004A4B41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 909FA0921A0C5A46004A4B41;
+			remoteInfo = UnixTime;
+		};
+		9049FD261A14670500EF018B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 909FA08B1A0C5A46004A4B41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9086519C1A1192AB004BA253;
+			remoteInfo = UnixTimeHelper;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		909FA0DA1A0C5B16004A4B41 /* CopyFiles */ = {
@@ -38,6 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				90B69D471A15596C007A0854 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +221,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9049FD231A1466FA00EF018B /* PBXTargetDependency */,
 			);
 			name = UnixTime;
 			productName = UnixTime;
@@ -194,6 +237,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Michael Grubb";
 				TargetAttributes = {
+					9049FD1E1A1466D100EF018B = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					9086519C1A1192AB004BA253 = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -217,6 +263,7 @@
 			targets = (
 				909FA0921A0C5A46004A4B41 /* UnixTime */,
 				9086519C1A1192AB004BA253 /* UnixTimeHelper */,
+				9049FD1E1A1466D100EF018B /* Distribute */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +290,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9049FD281A14671500EF018B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -o errexit\n\n[ \"$CONFIGURATION\" = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nSVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nHVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleShortVersionString)\nDOWNLOAD_BASE_URL=\"http://www.example.com/download/\"\nRELEASENOTES_URL=\"http://www.example.com/software/my-cool-app/release-notes.html#version-$VERSION\"\n\nARCHIVE_FILENAME=\"$PROJECT_NAME-$HVERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key 1\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\nopenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n| openssl dgst -dss1 -sign <(security find-generic-password -s \"$KEYCHAIN_PRIVKEY_NAME\" -g -w \\\n| python -c 'import binascii,sys; print binascii.unhexlify(sys.stdin.read().strip())') \\\n| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat <<EOF\n<item>\n<title>Version $HVERSION</title>\n<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n<pubDate>$PUBDATE</pubDate>\n<enclosure\nurl=\"$DOWNLOAD_URL\"\nsparkle:version=\"$SVERSION\"\ntype=\"application/octet-stream\"\nlength=\"$SIZE\"\nsparkle:dsaSignature=\"$SIGNATURE\"\n/>\n</item>\nEOF";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		908651991A1192AB004BA253 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +327,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9049FD231A1466FA00EF018B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9086519C1A1192AB004BA253 /* UnixTimeHelper */;
+			targetProxy = 9049FD221A1466FA00EF018B /* PBXContainerItemProxy */;
+		};
+		9049FD251A14670200EF018B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 909FA0921A0C5A46004A4B41 /* UnixTime */;
+			targetProxy = 9049FD241A14670200EF018B /* PBXContainerItemProxy */;
+		};
+		9049FD271A14670500EF018B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9086519C1A1192AB004BA253 /* UnixTimeHelper */;
+			targetProxy = 9049FD261A14670500EF018B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		909FA09F1A0C5A46004A4B41 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
@@ -284,6 +365,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9049FD201A1466D200EF018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9049FD211A1466D200EF018B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		908651B81A1192AB004BA253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -349,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -385,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -431,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9049FD1F1A1466D200EF018B /* Build configuration list for PBXAggregateTarget "Distribute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9049FD201A1466D200EF018B /* Debug */,
+				9049FD211A1466D200EF018B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		908651B71A1192AB004BA253 /* Build configuration list for PBXNativeTarget "UnixTimeHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

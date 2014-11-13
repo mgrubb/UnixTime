@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Distribute.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Distribution.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>UnixTime Release.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +37,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9049FD111A14486600EF018B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9049FD1A1A14667000EF018B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9049FD1E1A1466D100EF018B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9086519C1A1192AB004BA253</key>
 		<dict>
 			<key>primary</key>
